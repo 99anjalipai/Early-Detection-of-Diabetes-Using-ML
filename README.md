@@ -47,7 +47,7 @@ Early-Detection-of-Diabetes-Using-ML/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
 
 
 # 🚀 Steps to Execute the Project
