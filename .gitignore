@@ -1,0 +1,38 @@
+# ================================================
+# PYTHON
+# ================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python bytecode cache
+*.pkl
+*.pickle
+*.joblib
+
+# Logs
+*.log
+
+# ================================================
+# IDE / EDITOR FILES
+# ================================================
+.vscode/
+.idea/
+*.code-workspace
+
+# ================================================
+# OS FILES
+# ================================================
+.DS_Store
+Thumbs.db

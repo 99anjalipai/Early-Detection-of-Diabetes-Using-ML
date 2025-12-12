@@ -1,0 +1,17 @@
+# Core ML + Data Science
+numpy
+pandas
+scikit-learn==1.4.2
+imbalanced-learn==0.12.2
+xgboost
+
+# Deep Learning (CPU-only is fine)
+tensorflow>=2.16.0
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+tqdm
+joblib
