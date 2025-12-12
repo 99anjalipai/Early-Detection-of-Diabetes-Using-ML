@@ -15,37 +15,40 @@ The project implements:
 
 ## 📁 Project Structure
 
+```text
 Early-Detection-of-Diabetes-Using-ML/
 │
 ├── data/
-│ ├── raw/
-│ │ └── diabetes.csv # Original dataset 
-│ └── processed/
-│ └── df_engineered.csv # Saved after feature engineering
+│   ├── raw/
+│   │   └── diabetes.csv                 # Original dataset
+│   └── processed/
+│       └── df_engineered.csv            # Saved after feature engineering
 │
 ├── notebooks/
-│ └── EDA.ipynb # Exploratory Data Analysis notebook
+│   └── EDA.ipynb                        # Exploratory Data Analysis notebook
 │
 ├── src/
-│ ├── init.py
-│ ├── config.py # Paths for dataset & processed files
-│ ├── data_pipeline.py # Load → Feature engineer → Split → Scale
-│ └── models/
-│ ├── init.py
-│ ├── svm_model.py # Calibrated RBF SVM (best variant)
-│ ├── xgboost_model.py # Weighted XGBoost + threshold sweep
-│ └── dnn_model.py # DNN with focal loss + class weights
+│   ├── __init__.py
+│   ├── config.py                        # Paths for dataset & processed files
+│   ├── data_pipeline.py                 # Load → Feature engineer → Split → Scale
+│   ├── evaluation.py                    # Common evaluation helpers
+│   └── models/
+│       ├── __init__.py
+│       ├── svm_model.py                 # Calibrated RBF SVM (best variant)
+│       ├── xgboost_model.py             # Weighted XGBoost + threshold sweep
+│       └── dnn_model.py                 # DNN with focal loss + class weights
 │
 ├── scripts/
-│ ├── run_preprocessing.py # Runs only data pipeline
-│ ├── run_svm.py # Train + evaluate SVM model
-│ ├── run_xgboost.py # Train + evaluate XGBoost model
-│ ├── run_dnn.py # Train + evaluate DNN
-│ └── run_all.py # Full pipeline: preprocess + all models
+│   ├── run_preprocessing.py             # Runs only data pipeline
+│   ├── run_svm.py                       # Train + evaluate SVM model
+│   ├── run_xgboost.py                   # Train + evaluate XGBoost model
+│   ├── run_dnn.py                       # Train + evaluate DNN
+│   └── run_all.py                       # Full pipeline: preprocess + all models
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
 
 
 # 🚀 Steps to Execute the Project
