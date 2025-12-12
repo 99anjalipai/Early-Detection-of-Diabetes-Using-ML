@@ -20,7 +20,7 @@ Early-Detection-of-Diabetes-Using-ML/
 │
 ├── data/
 │   ├── raw/
-│   │   └── diabetes.csv                 # Original dataset
+│   │   └── diabetes_012_health_indicators_BRFSS2015.csv                 # Original dataset
 │   └── processed/
 │       └── df_engineered.csv            # Saved after feature engineering
 │
@@ -31,7 +31,6 @@ Early-Detection-of-Diabetes-Using-ML/
 │   ├── __init__.py
 │   ├── config.py                        # Paths for dataset & processed files
 │   ├── data_pipeline.py                 # Load → Feature engineer → Split → Scale
-│   ├── evaluation.py                    # Common evaluation helpers
 │   └── models/
 │       ├── __init__.py
 │       ├── svm_model.py                 # Calibrated RBF SVM (best variant)
